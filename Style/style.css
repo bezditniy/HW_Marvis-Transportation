@@ -1,0 +1,610 @@
+html, body{
+    height: 100%;
+    background-color: white;
+    color: white;
+    line-height: 100px;
+    font-size: 1.3em;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    text-decoration: none;
+}
+
+h2{
+    margin: 0px;
+}
+
+.wrapper{
+    display: grid;
+    grid-template: minmax(100px, auto) 1fr minmax(70px, auto) / 1fr;
+    min-height: 100%;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+}
+
+.header{
+    display: grid;
+    grid-area: header;
+    align-items: center;
+    background-color: #242633;
+    grid-template: 1fr / 1fr minmax(auto, 500px) minmax(auto, 1300px) 1fr;
+}
+
+.header_logo{
+    padding-top: 15px;
+    grid-column: 2/3;
+}
+
+.header_menu{
+    grid-column: 3/4;
+}
+
+.header_list{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: minmax(100px, 400px);
+    grid-gap: 10px;
+    justify-items: end;
+
+}
+
+.header_list li{
+}
+
+.header_link{
+    text-decoration: none;
+    color: white;
+}
+
+.header_button{
+    padding-top: 10px;
+}
+
+.main{
+    grid-area: main;
+    display: grid;
+    grid-template: 1fr / 1fr minmax(auto, 520px) minmax(auto, 1400px) 1fr;
+}
+
+.content{
+    grid-column: 2/4;
+    
+}
+
+.content_header{
+    background-image: url(../Image/blue-scania-streamline-r500-trucks-asphalt-road-wallpaper-1612563964.jpg);
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-rows: minmax(auto, 790px) minmax(auto, 200px) minmax(auto, 500px) minmax(auto, 150px) minmax(auto, 300px);
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.truck_img{
+    max-width: 100%;
+    height: auto;    
+}
+
+.heading{
+    display: grid;
+    grid-template-columns: minmax(auto, 970px);
+    grid-column: 2/4;
+    padding-top: 110px;
+}
+
+.heading_txt{
+    margin: 0px 0px 0px 0px;
+    font-size: 1.2em;
+}
+
+.big_txt{
+    margin: 0px 0px 0px 0px;
+    line-height: 140px;
+    font-size: 5em;
+    
+}
+
+.heading_txt1{
+    margin: 10px 0px 0px 0px;
+    line-height: 50px;
+    font-size: 1.2em;
+}
+
+.heading_button{
+    gap: 10px;
+}
+
+.view{
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-columns: 50px 130px 50px;
+    justify-content: center;
+    place-items: end center;
+    grid-column: 2 / 3;
+}
+
+.arrow_view{
+
+}
+
+.span_1{
+    font-size: 1.4em;
+    color: red;
+}
+
+.numbers{
+    height: 40px;
+}
+
+.content_information_columns{
+    display: grid;
+    grid-template-columns: minmax(auto, 400px) minmax(auto, 400px) minmax(auto, 400px);
+    grid-gap: 15px;
+    grid-column: 3/2;
+}
+
+.content_information_title{
+    display: grid;
+    grid-template-columns: minmax(auto, 1000px) 200px;
+    align-items: center;
+    color: black;
+    grid-column: 2/2;
+}
+
+.column_item{
+
+}
+
+.title_txt{
+
+}
+
+.white_button{
+
+}
+
+.content_txt{
+    display: grid;
+    text-align: center;
+    color: black;
+    line-height: 70px;
+    grid-column: 3/2;
+}
+
+.content_information{
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 4fr 5fr;
+    margin-bottom: 40px;
+}
+
+.content_information_description{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-rows: minmax(auto,120px) minmax(auto,100px) minmax(auto,90px) minmax(auto,100px) minmax(auto,90px);
+    grid-gap: 10px;
+}
+
+.description_list{
+    display: grid;
+    grid-template-columns: minmax(auto,200px) minmax(auto,200px) minmax(auto,200px);
+    line-height: 30px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.description_txt{
+    color: gray;
+    font-size: 0.8em;
+    margin: 0px;
+    padding: 0px;
+    line-height: 30px;
+    display: grid;
+    grid-template-columns: minmax(auto,650px);
+}
+
+.description_txt1{
+    color: gray;
+    font-size: 0.8em;
+    margin: 0px;
+    padding: 0px;
+    line-height: 30px;
+    display: grid;
+    grid-template-columns: minmax(auto,650px);
+}
+
+.white_button2{
+    display: grid;
+    grid-template-columns: minmax(auto,100px);
+}
+
+.description_content{
+    display: grid;
+    grid-template-columns: minmax(auto,400px) minmax(auto,400px);
+    grid-gap: 20px;
+}
+
+.description_item{
+
+}
+
+.content_information2{
+    color: black;
+    margin-bottom: 40px;
+}
+
+.heading_title_block{
+    height: 900px;
+}
+
+.heading_title{
+    background-image: url(../Image/crop@1X\ truck\ -\ background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}    
+
+.heading_title_inside{
+    color: white;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: minmax(auto, 50px) repeat(2, 100px) minmax(auto, 500px);
+    padding-top: 50px;
+}
+
+.heading_title_txt{
+    font-size: 1em;
+    grid-column: 2;
+    margin: auto;
+}
+
+.heading_h1{
+    grid-column: 2;
+    margin: auto;
+}
+
+.line{
+    width: 100px;
+    background-color: red;
+    height: 2px;
+    margin: auto;
+    grid-column: 2;
+}
+
+.heading_title1{
+    text-decoration: none;
+    color: white;
+    font-size: 0.8em;
+    grid-column: 2;
+    margin: auto;
+}
+
+.heading_title_video{
+    background-size: cover;
+    grid-column: 2;
+}
+
+.content_information3{
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    margin-bottom: 40px;
+}
+
+.content_information_description2{
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    padding: 36px;
+}
+
+.description_item{
+
+}
+
+.content_information_description3{
+    display: grid;
+    grid-template-rows: minmax(auto, 100px) minmax(auto, 120px) minmax(auto, 40px) minmax(auto, 280px) minmax(auto, 70px);
+}
+
+.description_txt3{
+    margin: auto;
+    line-height: 30px;
+    font-size: 0.8em;
+    color: gray;
+}
+
+.line2{
+    width: 150px;
+    background-color: red;
+    height: 2px;
+    margin: 10px 0px 0px 0px;
+}
+
+.description_list2{
+    margin: 0px;
+    padding: 0px;
+    column-count: 2;
+    line-height: 60px;
+    font-size: 0.8em;
+}
+
+.symbol::before{
+    content: ">";
+    color: red;
+}
+
+.red_button{
+
+}
+
+.content_information4{
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 4fr 3fr 1fr;
+    margin-bottom: 100px;
+}
+
+.faqs_block{
+    display: grid;
+    grid-column: 2;
+    grid-template-rows: minmax(auto, 200px) minmax(auto, 500px);
+}
+
+.faqs_list{
+    margin: 0px;
+    padding: 0px;
+}
+
+.symbol1::before{
+    content: "+";
+    color: black;
+}
+
+.gray_line{
+    background-color: #bfbfbf;
+    width: 600px;
+    height: 1px;
+}
+
+.people_inf_block{
+    display: grid;
+    grid-column: 3;
+    grid-template-rows: minmax(auto, 200px) minmax(auto, 250px) minmax(auto, 250px);
+}
+
+.man_item{
+    display: grid;
+    grid-template-rows: minmax(auto, 100px) minmax(auto, 100px);
+}
+
+.man_image{
+    display: grid;
+    grid-template-columns: minmax(auto, 100px) minmax(auto, 200px);
+}
+
+.initials{
+    font-size: 0.6em;
+    line-height: 10px;
+}
+
+.name{
+    color: red;
+}
+
+.position{
+    color: gray;
+}
+
+.man_txt{
+    font-size: 0.6em;
+    color: gray;
+    line-height: 30px;
+}
+
+.woman_item{
+    display: grid;
+    grid-template-rows: minmax(auto, 100px) minmax(auto, 100px);
+}
+
+.woman_image{
+    display: grid;
+    grid-template-columns: minmax(auto, 100px) minmax(auto, 200px);
+}
+
+.initials1{
+    font-size: 0.6em;
+    line-height: 10px;
+}
+
+.woman_txt{
+    font-size: 0.6em;
+    color: gray;
+    line-height: 30px;
+}
+
+.red_back{
+    display: grid;
+    align-items: center;
+    background-color: red;
+    grid-template-columns: 2fr 4fr 1fr 2fr;
+    height: 160px;
+    
+}
+
+.title_block{
+    display: grid;
+    grid-template-rows: minmax(auto, 100px) minmax(auto, 60px);
+    line-height: 30px;
+    grid-column: 2;
+}
+
+h3{
+    line-height: 120px;
+    margin: 0px;
+}
+
+.red_block_txt{
+    margin: 0px;
+    font-size: 0.9em;
+}
+
+.dark_button{
+    line-height: 0;
+    grid-column: 3;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #242633;
+}
+
+.basement{
+    display: grid;
+    grid-template-columns: 2fr 4fr 5fr 4fr 2fr;
+    padding-top: 40px;
+}
+
+.basement_logo{
+    display: grid;
+    grid-template-rows: minmax(auto, 130px) minmax(auto, 170px) minmax(auto, 100px);
+    grid-column: 2;
+}
+
+.logo2{
+    padding-top: 40px;
+}
+
+.basement_logo_txt{
+    font-size: 0.8em;
+    color: #5c5c64;
+    line-height: 25px;
+    display: grid;
+    grid-template-columns: 300px;
+}
+
+.basement_soc{
+    display: inline-block;
+}
+
+.basement_company{
+    display: grid;
+    grid-template-rows: minmax(auto, 100px) minmax(auto, 50px) minmax(auto, 500px);
+    grid-column: 3;
+    font-size: 0.8em;
+}
+
+.line3{
+    background-color: red;
+    width: 100px;
+    height: 1px;
+    margin: 0px;
+}
+
+.basement_list_company{
+    column-count: 2;
+    padding: 0px;
+    margin: 0px;
+    line-height: 50px;
+}
+
+.basement_link{
+    text-decoration: none;
+    color: white;
+}
+
+.beasement_latest-post{
+    display: grid;
+    grid-template-rows: minmax(auto, 100px) minmax(auto, 50px) minmax(auto, 380px);
+    grid-column: 4;
+}
+
+.line4{
+    background-color: red;
+    width: 100px;
+    height: 1px;
+    margin: 0px;
+}
+
+.basement_txt_block{
+    line-height: 30px;
+
+
+}
+
+.basement_txt{
+    font-size: 0.8em;
+    margin: 0px;
+}
+
+.basement_txt_link{
+    text-decoration: none;
+    color: white;
+}
+
+.date{
+    font-size: 0.7em;
+    color: #5c5c64;
+}
+
+.basement2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.line5{
+    grid-column: 2;
+    background-color: gray;
+    width: 1620px;
+    height: 1px;
+}
+
+.contact_inf{
+    grid-column: 2;
+}
+
+.contact_list{
+    display: grid;
+    grid-template-columns: minmax(auto, 500px) minmax(auto, 240px) minmax(auto, 280px);
+    justify-content: center;
+    padding: 0px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.contact_link{
+    display: grid;
+    grid-template-columns: minmax(auto, 30px) minmax(auto, 500px);
+    text-decoration: none;
+}
+
+.contact_txt{
+    color: #5c5c64;
+    margin: 0px;
+    line-height: 25px;
+    font-size: 0.8em;
+}
+
+.footer_copyright{
+    background-color: #191b28;
+    display: grid;
+}
+
+.copyright_txt{
+    grid-column: 2;
+    justify-content: center;
+    color: #5c5c64;
+    font-size: 0.8em;
+}
+
+.copyright_span{
+    color: white;
+}
